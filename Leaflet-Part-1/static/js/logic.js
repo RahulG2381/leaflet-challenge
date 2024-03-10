@@ -40,7 +40,7 @@ for (let i = 0; i < earthquakeData.length; i++) {
         color: "white",
         fillColor: getColor(depth),
         radius: markerSize(magnitude)
-    }).bindPopup(`<h3>Place: ${earthquakeData[i].properties.place},Magnitude: ${earthquakeData[i].properties.mag},Depth: ${earthquakeData[i].geometry.coordinates[2]}</h3><hr><p>${new Date(earthquakeData[i].properties.time)}</p>`)
+    }).bindPopup(`<h3>Magnitude: ${earthquakeData[i].properties.mag}</h3><hr><h3>Location: ${earthquakeData[i].properties.place}</h3><hr><h3>Depth: ${earthquakeData[i].geometry.coordinates[2]}</h3>`)
     );
 }
 
